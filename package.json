@@ -1,0 +1,37 @@
+{
+  "name": "organization-management",
+  "version": "1.0.0",
+  "description": "apps to manage organization",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "npx knex migrate:latest --knexfile ./src/db/knexfile.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasanNugroho/organization-management.git"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "burhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HasanNugroho/organization-management/issues"
+  },
+  "homepage": "https://github.com/HasanNugroho/organization-management#readme",
+  "dependencies": {
+    "auto-load": "^3.0.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "knex": "^3.0.1",
+    "mysql": "^2.18.1",
+    "objection": "^3.1.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
